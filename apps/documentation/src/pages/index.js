@@ -1,24 +1,24 @@
-import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './index.module.css';
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import React from 'react'
+import clsx from 'clsx'
+import Layout from '@theme/Layout'
+import Link from '@docusaurus/Link'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
+import styles from './index.module.css'
+import useBaseUrl from '@docusaurus/useBaseUrl'
 
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
+function HomepageHeader () {
+  const { siteConfig } = useDocusaurusContext()
   return (
     <>
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
-          <h2 className="hero__title">
+        <div className='container'>
+          <h2 className='hero__title'>
             It's all about building real world, production ready apps.
           </h2>
-          <section className="introduction-container">
-            <img className="introduction-logo" src={useBaseUrl('/img/realworld-logo.png')} alt="" />
+          <section className='introduction-container'>
+            <img className='introduction-logo' src={useBaseUrl('/img/realworld-logo.png')} alt='' />
             <div>
-              <p className="introduction-content">
+              <p className='introduction-content'>
                 While most "todo" demos provide an excellent cursory glance at a framework's
                 capabilities, they typically don't convey the knowledge & perspective required to
                 actually build real applications with it. That's why we, with the help of open
@@ -26,7 +26,7 @@ function HomepageHeader() {
                 framework.
               </p>
               <div className={styles.buttons}>
-                <Link className="button button--primary button--lg" to="https://demo.realworld.io">
+                <Link className='button button--primary button--lg' to='https://demo.realworld.io'>
                   discover our demo
                 </Link>
               </div>
@@ -39,9 +39,9 @@ function HomepageHeader() {
         <img
           className={styles.codebaseshowLogo}
           src={useBaseUrl('/img/codebaseshow-logo.png')}
-          alt=""
+          alt=''
         />
-        <a className={styles.codebaseshowLink} href="https://codebase.show/projects/realworld">
+        <a className={styles.codebaseshowLink} href='https://codebase.show/projects/realworld'>
           Discover them on CodebaseShow
         </a>
       </section>
@@ -54,73 +54,93 @@ function HomepageHeader() {
             </p>
             <ul className={styles.wipList}>
               <li>
-                <a href="https://github.com/gothinkster/realworld/discussions/1009" target="_blank">
+                <a
+                  href='https://github.com/gothinkster/realworld/discussions/1009'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   Spring Boot + Spring JPA + Vue3 + Vuex + Vite
                 </a>
                 by{' '}
-                <a href="https://github.com/kkminseok" target="_blank">
+                <a href='https://github.com/kkminseok' target='_blank' rel='noreferrer'>
                   minseokkang
                 </a>
               </li>
               <li>
-                <a href="https://github.com/gothinkster/realworld/discussions/1082" target="_blank">
+                <a
+                  href='https://github.com/gothinkster/realworld/discussions/1082'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   Next.js 13+ & Server Components & Layouts & Streaming
                 </a>
                 by{' '}
-                <a href="https://github.com/Dima-Abramenko" target="_blank">
+                <a href='https://github.com/Dima-Abramenko' target='_blank' rel='noreferrer'>
                   Dmitry Abramenko
                 </a>
               </li>
               <li>
-                <a href="https://github.com/gothinkster/realworld/discussions/1047" target="_blank">
+                <a
+                  href='https://github.com/gothinkster/realworld/discussions/1047'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   Actix + Tera + SQLx
                 </a>
                 by{' '}
-                <a href="https://github.com/Bechma" target="_blank">
+                <a href='https://github.com/Bechma' target='_blank' rel='noreferrer'>
                   Bechma
                 </a>
               </li>
               <li>
-                <a href="https://github.com/gothinkster/realworld/discussions/963" target="_blank">
+                <a
+                  href='https://github.com/gothinkster/realworld/discussions/963'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   TypeScript + React + Recoil
                 </a>
                 by{' '}
-                <a href="https://github.com/sukam09" target="_blank">
+                <a href='https://github.com/sukam09' target='_blank' rel='noreferrer'>
                   Seungwon Lee
                 </a>
               </li>
               <li>
-                <a href="https://github.com/gothinkster/realworld/discussions/1010" target="_blank">
+                <a
+                  href='https://github.com/gothinkster/realworld/discussions/1010'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   .NET implementation - JS, AWS, Pulumi
                 </a>
                 by{' '}
-                <a href="https://github.com/JustJordanT" target="_blank">
+                <a href='https://github.com/JustJordanT' target='_blank' rel='noreferrer'>
                   Jordan Taylor
                 </a>
               </li>
             </ul>
             <a
               className={styles.link}
-              href="https://github.com/gothinkster/realworld/discussions/categories/wip-implementations"
+              href='https://github.com/gothinkster/realworld/discussions/categories/wip-implementations'
             >
               and so more...
             </a>
           </div>
-          <img className={styles.wipListImage} src={useBaseUrl('/img/spaceship.png')} alt="" />
+          <img className={styles.wipListImage} src={useBaseUrl('/img/spaceship.png')} alt='' />
         </div>
       </section>
     </>
-  );
+  )
 }
 
-export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
+export default function Home () {
+  const { siteConfig } = useDocusaurusContext()
   return (
     <Layout
       title={`Welcome on ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      description='Description will go into a meta tag in <head />'
     >
       <HomepageHeader />
     </Layout>
-  );
+  )
 }
