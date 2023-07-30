@@ -25,18 +25,18 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/gothinkster/realworld/tree/main/docs/docs/',
+          editUrl: 'https://github.com/gothinkster/realworld/tree/main/docs/docs/'
         },
         blog: {
           showReadingTime: true,
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/gothinkster/realworld/tree/main/docs/blog/',
+          editUrl: 'https://github.com/gothinkster/realworld/tree/main/docs/blog/'
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      }),
-    ],
+          customCss: require.resolve('./src/css/custom.css')
+        }
+      })
+    ]
   ],
 
   themeConfig:
@@ -46,29 +46,29 @@ const config = {
         title: 'RealWorld',
         logo: {
           alt: 'RealWorld Logo',
-          src: 'img/realworld-logo.png',
+          src: 'img/realworld-logo.png'
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Documentation',
+            label: 'Documentation'
           },
           /* {to: '/blog', label: 'Blog', position: 'left'}, */
           {
             position: 'right',
             to: 'docs/implementation-creation/introduction',
             html: '<a>contribute</a>',
-            className: 'header-contribute-link',
+            className: 'header-contribute-link'
           },
           {
             href: 'https://github.com/gothinkster/realworld',
             'aria-label': 'GitHub repository',
             className: 'header-github-link',
-            position: 'right',
-          },
-        ],
+            position: 'right'
+          }
+        ]
       },
       footer: {
         style: 'dark',
@@ -78,12 +78,12 @@ const config = {
             items: [
               {
                 label: 'CodebaseShow',
-                href: 'https://codebase.show/projects/realworld',
+                href: 'https://codebase.show/projects/realworld'
               },
               {
                 label: 'GitHub Discussions',
-                href: 'https://github.com/gothinkster/realworld/discussions',
-              },
+                href: 'https://github.com/gothinkster/realworld/discussions'
+              }
               /*
             {
               label: 'Twitter',
@@ -91,7 +91,7 @@ const config = {
             },
 
                */
-            ],
+            ]
           },
 
           {
@@ -99,16 +99,16 @@ const config = {
             items: [
               {
                 label: 'Icons created by Freepik',
-                href: 'https://www.flaticon.com/fr/icones-gratuites/fusee',
-              },
-            ],
-          },
-        ],
+                href: 'https://www.flaticon.com/fr/icones-gratuites/fusee'
+              }
+            ]
+          }
+        ]
       },
       colorMode: {
-        disableSwitch: true,
-      },
-    }),
-};
+        disableSwitch: true
+      }
+    })
+}
 
-module.exports = config;
+module.exports = config

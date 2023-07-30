@@ -1,4 +1,4 @@
-const { composePlugins, withNx } = require('@nx/webpack');
+const { composePlugins, withNx } = require('@nx/webpack')
 
 // Nx plugins for webpack.
 module.exports = composePlugins(withNx(), config => {
@@ -6,5 +6,5 @@ module.exports = composePlugins(withNx(), config => {
   // e.g. config.plugins.push(new MyPlugin())
   // For more information on webpack config and Nx see:
   // https://nx.dev/packages/webpack/documents/webpack-config-setup
-  return config;
-});
+  return config
+})
